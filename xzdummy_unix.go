@@ -14,5 +14,5 @@ import (
 var PackageOneHello = one.PackageOneHello
 
 func SayHello() {
-	fmt.Println("Hello from UNIX version of XZDummy package v0.1.3!")
+	fmt.Println("Hello from UNIX version of XZDummy package v0.1.5!")
 }
