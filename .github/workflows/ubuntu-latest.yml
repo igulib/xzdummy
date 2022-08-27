@@ -35,6 +35,8 @@ jobs:
           else
             COLOR=orange
           fi
+          echo "COVERAGE=$COVERAGE" >> $GITHUB_ENV
+          echo "COLOR=$COLOR" >> $GITHUB_ENV
     - name: Create gist and coverage badge
       uses: schneegans/dynamic-badges-action@v1.4.0
       with:
