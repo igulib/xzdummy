@@ -2,9 +2,11 @@ package one
 
 import "fmt"
 
-func isPositive(val int) {
+func positiveOrNegative(val int) {
 	if val > 0 {
-		fmt.Println("val is positive or zero")
+		fmt.Println("val is positive")
+	} else if val == 0 {
+		fmt.Println("val is zero")
 	} else {
 		fmt.Println("val is negative")
 	}
@@ -12,5 +14,5 @@ func isPositive(val int) {
 
 func PackageOneHello() {
 	fmt.Println("Hello from package one!")
-	isPositive(5)
+	positiveOrNegative(5)
 }
